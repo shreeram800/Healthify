@@ -1,5 +1,5 @@
 import { Diet } from "./Diet";
-import { Workout } from"./Workout";
+import { Workout } from "./jsonToHtml";
 
 
 export function generate(name, age, height, currentWeight, targetWeight, specialMedicalCondition, minTime, exercise){
