@@ -1,14 +1,18 @@
-import main from "./aiGenerate";
-import exec from "./aiExerciseGenerate";
+import { Diet } from "./Diet";
+import { Workout } from"./Workout";
 
 
 export function generate(name, age, height, currentWeight, targetWeight, specialMedicalCondition, minTime, exercise){
     let output;
-    if(exercise=="DIET"){
-        output=main(name, age, height,currentWeight, targetWeight,specialMedicalCondition, minTime  );
+    if(exercise=="Diet"){
+        output=Diet(name, age, height,currentWeight, targetWeight,specialMedicalCondition, minTime  );
+    }
+    else if(exercise=="Exercise"){
+        output=Workout(name, age, height,currentWeight, targetWeight,specialMedicalCondition, minTime );
     }
     else{
-        output=exec(name, age, height,currentWeight, targetWeight,specialMedicalCondition, minTime );
+        return "Error: occurred....!!!!"
     }
+
     return output;
 }

@@ -107,7 +107,7 @@ export function Form() {
                     </option>
                 ))}
             </Select>
-            <Text fontSize={"xl"}>Min time to achieve Target in weeks: </Text>
+            <Text fontSize={"xl"}>Min time to achieve Target in weeks:</Text>
             <Input w={"60%"} rounded={"max"} value={minTime} size="lg" type="number" onChange={handleMinTimeChange} borderRadius={"8px"}></Input>
             <Text fontSize={"xl"}>EXERCISE OR DIET: </Text>
             <Select w={"60%"} rounded={"max"} value={exercise} onChange={handleExercise} size="lg" borderRadius={"8px"}>
@@ -135,8 +135,8 @@ export function Form() {
             )}
             {outputHTML && (
                 <Box align={"center"}>
-                <Text fontSize="3xl" color={"cyan"} as={"b"} marginTop={"50px"}>OUTPUT</Text>
-                <Box marginTop="20px" align="left" padding="30px" w="70%" border="2px" borderRadius="10px" borderColor={"cyan"} marginBottom={"20%"} dangerouslySetInnerHTML={{ __html: outputHTML }} />
+                <Text fontSize="3xl" color={"cyan"} as={"b"} marginTop={"70px"}>OUTPUT</Text>
+                <Box marginTop="20px" align="left" padding="30px" w="50%" border="2px" borderRadius="10px" borderColor={"cyan"} marginBottom={"20%"} dangerouslySetInnerHTML={{ __html: outputHTML }} />
                 </Box>
             )}
         </Box>
